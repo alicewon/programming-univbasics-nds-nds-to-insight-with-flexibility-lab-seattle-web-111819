@@ -116,11 +116,11 @@ while counter1<source.length do
   directors_movies = source[counter1][:movies]
   directors_movies_updated = []
   while counter2 < directors_movies.length do
-    
+
     directors_movies_updated<<movie_with_director_name(source[counter1][:name], directors_movies[counter2])
-    
+
     counter2 +=1
-    
+
   end
   result<<directors_movies_updated
   counter1 +=1
@@ -136,19 +136,19 @@ end
 
 #   answer=[]
 #   i=0
-# 
+#
 #     while i < source.length do
 #       directors_movies=[]
 #       counter=0
 #       while counter < movies_collection.length do
-#         
-#       end  
+#
+#       end
 #       directors_movies<<movie_with_director_name(name, source[i])
 #     #movies_array<<source[i][:movies]
-#     
+#
 #     i += 1
 #     end
-#   answer 
+#   answer
 # end
 
 # ----------------    End of Your Code Region --------------------
