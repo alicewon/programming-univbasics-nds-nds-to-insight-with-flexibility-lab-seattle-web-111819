@@ -108,15 +108,48 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
 
-  newArray=[]
-  i=0
+result=[]
+counter1=0
 
-    while i < source.length do
-    newArray<<source[i][:movies]
-    i += 1
-    end
-  newArray
+while counter1<source.length do
+  counter2=0
+  directors_movies = source[counter1][:movies]
+  directors_movies_updated = []
+  while counter2 < directors_movies.length do
+    
+    directors_movies_updated<<movie_with_director_name(source[counter1][:name], directors_movies[counter2])
+    
+    counter2 +=1
+    
+  end
+  result<<directors_movies_updated
+  counter1 +=1
+  
 end
+result
+
+end
+
+
+
+
+
+#   answer=[]
+#   i=0
+# 
+#     while i < source.length do
+#       directors_movies=[]
+#       counter=0
+#       while counter < movies_collection.length do
+#         
+#       end  
+#       directors_movies<<movie_with_director_name(name, source[i])
+#     #movies_array<<source[i][:movies]
+#     
+#     i += 1
+#     end
+#   answer 
+# end
 
 # ----------------    End of Your Code Region --------------------
 # Don't edit the following code! Make the methods above work with this method
