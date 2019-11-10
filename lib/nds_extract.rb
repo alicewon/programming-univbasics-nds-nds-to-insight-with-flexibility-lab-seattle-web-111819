@@ -77,23 +77,23 @@ def gross_per_studio(collection)
 
 #aoh where each hash represents a movie, return hash that includes gross for each studio
 
-studio_sums = {}
-i = 0
-
-while i < collection.length do
-  studio_name = collection[i][:studio]
-  movie_gross = collection[i][:worldwide_gross]
-
-  if !studio_sums[studio_name]
-      studio_sums[studio_name]= movie_gross
-  else
-    studio_sums[studio_name] += movie_gross
-  end
-
-  i+=1
-
-end
-studio_sums
+# studio_sums = {}
+# i = 0
+#
+# while i < collection.length do
+#   studio_name = collection[i][:studio]
+#   movie_gross = collection[i][:worldwide_gross]
+#
+#   if !studio_sums[studio_name]
+#       studio_sums[studio_name]= movie_gross
+#   else
+#     studio_sums[studio_name] += movie_gross
+#   end
+#
+#   i+=1
+#
+# end
+# studio_sums
 end
 
 def movies_with_directors_set(source)
