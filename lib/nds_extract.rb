@@ -83,15 +83,15 @@ i = 0
 while i < collection.length do
   studio_name = collection[i][:studio]
   movie_gross = collection[i][:worldwide_gross]
-  
+
   if !studio_sums[studio_name]
       studio_sums[studio_name]= movie_gross
   else
     studio_sums[studio_name] += movie_gross
   end
-  
+
   i+=1
-  
+
 end
 studio_sums
 end
